@@ -1,0 +1,7 @@
+name: a2guild
+main: fr.acth2.guilds.Main
+version: 1.0
+commands:
+  guild:
+    description: Guild command
+    usage: /guild <chat|...>
