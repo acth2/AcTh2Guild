@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-#How to setup the DB
+<h4>How to setup the DB</h4>
 <pre>
 CREATE TABLE IF NOT EXISTS `playerList` (
     `uuid` VARCHAR(255) NOT NULL,
