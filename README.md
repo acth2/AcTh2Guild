@@ -1,12 +1,19 @@
-# AcTh2Guild
-A guild plugin opensource for spigot 1.8 !
-
-
-# HOW TO SETUP THE DB
-
-<h4>Create a structure including:</h4>
-<p>1 	uuid Primary   varchar(255) 	utf8mb3_general_ci 		                No 	None  (PRIMARY) </p>
-<p>2 	id 	           varchar(255) 	utf8mb3_general_ci 		                No  None 	          </p>
-<p>3 	col3           tinyint(1) 		                                      No  0               </p>
-<p>4 	publicCol 	   tinyint(1) 			                                    No 	0 		          </p>
-<p>5 	isChat 	       tinyint(2) 			                                    No 	0 	            </p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DB Schema Example</title>
+</head>
+<body>
+<pre>
+CREATE TABLE IF NOT EXISTS `playerList` (
+    `uuid` VARCHAR(255) NOT NULL,
+    `id` VARCHAR(255) NOT NULL,
+    `col3` TINYINT(1) NOT NULL DEFAULT 0,
+    `publicCol` TINYINT(1) NOT NULL DEFAULT 0,
+    `isChat` TINYINT(2) NOT NULL DEFAULT 0,
+    PRIMARY KEY (`uuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+</pre>
+</body>
+</html>
